@@ -46,4 +46,4 @@ The [raw result files](rawresults/) are passwort protected to reduce the chance 
 | Qwen2.5-7B                                 | **JSON**                   | -                | -                | -                | **TTL**               | **TTL**             |
 | Qwen2.5-Coder-32B                          | -                          | **TTL**          | **TTL**          | -                | -                     | -                   |
 | Solar-pro-preview-22B                      | -                          | -                | -                | JSON             | -                     | -                   |
-| VLLM--/ds/models/llms/Phi_3.5_MoE_Instruct | -                          | **JSON**         | **JSON**         | **JSON**         | **TTL**               | -                   |
+| Phi_3.5_MoE_Instruct                       | -                          | **JSON**         | **JSON**         | **JSON**         | **TTL**               | -                   |
