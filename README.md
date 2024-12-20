@@ -1,9 +1,13 @@
 # Results generated with LLM-KG-Bench version 3
 
-This repo contains [evaluation results](results/) generated with LLM-KG-Bench version 3 for 38 open and proprietary LLMs.
+This repo contains [evaluation results](rawresults/) generated with [LLM-KG-Bench version 3](https://github.com/aksw/LLM-KG-Bench) for 38* open and proprietary LLMs.
 This includes the [configuration](configuration.yml), the [model format preference table](modelPreferences.csv) and the [plots](plots/).
 
 The [raw result files](rawresults/) are passwort protected to reduce the chance of test data leakage into LLM training data. Please do not spread them unencrypted. You can unzip them with `Leave-Finest-Coats-Serena-Cheats-46`
+
+*Note: The LLM "Solar pro preview 22B" skipped several test cases due to context window limitations.
+
+![CC BY 4.0](https://i.creativecommons.org/l/by/4.0/88x31.png) This dataset is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ## Model Preference Turtle vs. JSON-LD:
 
@@ -45,5 +49,5 @@ The [raw result files](rawresults/) are passwort protected to reduce the chance 
 | Qwen2.5-72B                                | **JSON**                   | JSON             | **JSON**         | -                | -                     | **TTL**             |
 | Qwen2.5-7B                                 | **JSON**                   | -                | -                | -                | **TTL**               | **TTL**             |
 | Qwen2.5-Coder-32B                          | -                          | **TTL**          | **TTL**          | -                | -                     | -                   |
-| Solar-pro-preview-22B                      | -                          | -                | -                | JSON             | -                     | -                   |
+| Solar-pro-preview-22B*                     | -                          | -                | -                | JSON             | -                     | -                   |
 | Phi_3.5_MoE_Instruct                       | -                          | **JSON**         | **JSON**         | **JSON**         | **TTL**               | -                   |
