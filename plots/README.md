@@ -1,6 +1,20 @@
 # Plots on the Results
 
-## Navigating Open LLM Semantic Web Technology Support with Capability Compass
+## Navigating LLM Semantic Web Technology Support with Capability Compass
+
+### Dimensions of the Capability Compass
+
+The capability Compass is organized around 5 dimensions, mainly for demonstration purposes of the new LLM-KG-Bench feature to aggregate scores:
+* **RDF Syntax (R-Syn)**: Combination of several scores where the LLM has to work with syntax of RDF serialization formats
+* **RDF Analytics (R-Ana)**: Combination of several scores of the different variations of RdfFriendCount task
+* **SPARQL Semantics (S-Sem)**: Combination of Text2Sparql and several Sparql2Answer scores.
+* **SPARQL Syntax (S-Syn)**: The results of SparqlSyntaxFixing task
+* **Brevity (Brev)**: Combination of several scores evaluating whether the LLM returns only the information asked for. Additional text makes the parsing difficult and the generation cost additional computing resources.
+
+### open LLMs
+
+The following table shows an overview of Capability Compass plots for open LLMs.
+Each line contains a LLM model family, the columns sort the LLMs according to their parameter count.
 
 | Family          | 0.5B                                                                                                                                              | 1B                                                                                                                                                                   | 1.5B                                                                                                                                              | 3B/3.8B                                                                                                                                                              | 7B/8B                                                                                                                                                                | MoE Active 6-14B                                                                                                                                    | 14B                                                                                                                                                    | 32B/33B                                                                                                                                                 | 70B/72B                                                                                                                                                               |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
