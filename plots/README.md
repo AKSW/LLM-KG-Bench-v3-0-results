@@ -5,11 +5,14 @@
 ### Dimensions of the Capability Compass
 
 The capability Compass is organized around 5 dimensions, mainly for demonstration purposes of the new LLM-KG-Bench feature to aggregate scores:
+
 * **RDF Syntax (R-Syn)**: Combination of several scores where the LLM has to work with syntax of RDF serialization formats
 * **RDF Analytics (R-Ana)**: Combination of several scores of the different variations of RdfFriendCount task
 * **SPARQL Semantics (S-Sem)**: Combination of Text2Sparql and several Sparql2Answer scores.
 * **SPARQL Syntax (S-Syn)**: The results of SparqlSyntaxFixing task
 * **Brevity (Brev)**: Combination of several scores evaluating whether the LLM returns only the information asked for. Additional text makes the parsing difficult and the generation cost additional computing resources.
+
+In the plots, the mean value is indicated by the solid black line, and the blue area represents the variance.
 
 ### open LLMs
 
