@@ -51,7 +51,7 @@ For more details see in [plots/README.md](plots/README.md#navigating-llm-semanti
 ## Model Preference Turtle vs. JSON-LD:
 |                       | AllTasks | RdfConnectionExplainStatic | RdfFriendCount-1 | RdfFriendCount-2 | RdfSyntaxFixList | Sparql2AnswerListOrga | Text2AnswerListOrga |
 | :-------------------- | :------- | :------------------------- | :--------------- | :--------------- | :--------------- | :-------------------- | :------------------ |
-| All Models            | NaN      | -                          | **JSON**         | **JSON**         | **JSON**         | TTL                   | **TTL**             |
+| All Models            | -        | -                          | **JSON**         | **JSON**         | **JSON**         | TTL                   | **TTL**             |
 | Claude 3\.5 Haiku     | **TTL**  | **JSON**                   | **TTL**          | **TTL**          | -                | -                     | -                   |
 | Claude 3\.5 Sonnet    | -        | -                          | -                | -                | -                | -                     | -                   |
 | Deepseek-Chat-v3      | -        | **JSON**                   | **TTL**          | -                | -                | JSON                  | **JSON**            |
@@ -94,4 +94,4 @@ For more details see in [plots/README.md](plots/README.md#navigating-llm-semanti
 | Qwen-2\.5-Coder-32B   | **TTL**  | -                          | **TTL**          | **TTL**          | -                | -                     | -                   |
 | Qwen-3-235B           | -        | -                          | -                | -                | -                | -                     | -                   |
 
-This table is available as [CSV file](modelPreferences.csv) as well.
+This table is available as [CSV file](allPreferences.csv) as well.
