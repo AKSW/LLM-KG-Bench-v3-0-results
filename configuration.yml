@@ -521,6 +521,27 @@ models:
           endTag: ""
           tensor_parallel_size: 4
           context_size: 128000
+  - label: Qwen3.0-235B # fp8
+    class: ModelOpenAI
+    params:
+        - model: "qwen/qwen3-235b-a22b"
+          serverProvider: "openRouter"
+  - label: Llama-4.0-maverick # fp8
+    class: ModelOpenAI
+    params:
+        - model: "meta-llama/llama-4-maverick"
+          serverProvider: "openRouter"
+  - label: DeepSeek-V3-2025-03
+    class: ModelOpenAI
+    params:
+        - model: "deepseek/deepseek-chat-v3-0324"
+          serverProvider: "openRouter"
+  - label: DeepSeek-R1
+    class: ModelOpenAI
+    params:
+        - model: "deepseek/deepseek-r1"
+          serverProvider: "openRouter"
+
 sizes:
   - 1000
 iterations: 20
