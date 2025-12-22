@@ -1,8 +1,63 @@
 # Plots on the Results
 
-## Navigating LLM Semantic Web Technology Support with Capability Compass
+Page index: 
+* list of [aggregated SPARQL scores](#aggregated-sparql-scores)
+* [capability clots for open LLMs](#capability-plots-for-open-llms) organized by LLM family and LLM parameter count
+* [capability plots for propietary LLMs](#capability-plots-for-propietary-llms)
+* [task plots](#task-plots) with a boxplot per task
+* table on [Model Preference Turtle vs. JSON-LDf](#model-preference-turtle-vs-json-ld)
 
-### Dimensions of the Capability Compass
+## aggregated SPARQL scores
+| modelId               | mean  | SD    |
+| :-------------------- | :---- | :---- |
+| \*Claude 3\.5 Haiku   | 0\.94 | 0\.2  |
+| \*Claude 3\.5 Sonnet  | 0\.94 | 0\.21 |
+| \*Qwen-2\.5-Coder-32B | 0\.93 | 0\.22 |
+| \*GPT4o 2024/11       | 0\.91 | 0\.22 |
+| GPTo1-pre 2024/09     | 0\.91 | 0\.25 |
+| Qwen-2\.5-72B         | 0\.91 | 0\.25 |
+| \*Gemini 1\.5 Pro     | 0\.9  | 0\.27 |
+| Deepseek-R1           | 0\.9  | 0\.27 |
+| Gemini 1\.5 Flash     | 0\.9  | 0\.28 |
+| Qwen-3-235B           | 0\.89 | 0\.28 |
+| GPTo1-mini 2024/09    | 0\.89 | 0\.27 |
+| Llama-3\.1-70B        | 0\.89 | 0\.27 |
+| Llama-4-Maverick      | 0\.87 | 0\.29 |
+| Deepseek-Chat-v3      | 0\.87 | 0\.29 |
+| GPT4o-mini 2024/07    | 0\.87 | 0\.29 |
+| Llama-3\.0-70B        | 0\.86 | 0\.3  |
+| Llama-3\.3-70B        | 0\.85 | 0\.31 |
+| Qwen-2\.0-72B         | 0\.85 | 0\.3  |
+| Gemini 2\.0 Flash Exp | 0\.85 | 0\.31 |
+| Qwen-2\.5-14B         | 0\.81 | 0\.34 |
+| Qwen-2\.5-32B         | 0\.81 | 0\.35 |
+| GPT3\.5 2024/01       | 0\.8  | 0\.34 |
+| Phi-3\.5-MoE          | 0\.74 | 0\.35 |
+| Qwen-2\.5-7B          | 0\.73 | 0\.39 |
+| Deepseek-Coder-33B    | 0\.73 | 0\.38 |
+| Qwen-2-57B-A14B       | 0\.7  | 0\.41 |
+| Qwen-2\.0-7B          | 0\.58 | 0\.46 |
+| Qwen-2\.5-3B          | 0\.57 | 0\.44 |
+| OpenCoder-8B          | 0\.55 | 0\.45 |
+| Phi-3\.0-medium-128k  | 0\.5  | 0\.44 |
+| Phi-3\.5-mini         | 0\.49 | 0\.44 |
+| Llama-3\.1-8B         | 0\.42 | 0\.44 |
+| Llama-3\.0-8B         | 0\.41 | 0\.44 |
+| Phi-3\.0-mini-128k    | 0\.39 | 0\.41 |
+| Phi-3\.0-small-128k   | 0\.39 | 0\.43 |
+| Qwen-2\.5-1.5B        | 0\.32 | 0\.41 |
+| Llama-3\.2-3B         | 0\.23 | 0\.36 |
+| Qwen-2\.0-1.5B        | 0\.2  | 0\.34 |
+| Qwen-2\.5-0.5B        | 0\.11 | 0\.27 |
+| Llama-3\.2-1B         | 0\.03 | 0\.14 |
+| Qwen-2\.0-0.5B        | 0\.01 | 0\.1  |
+
+Models prefixed with a star (*) show no significant
+difference in performance compared to Clause 3.5 Haiku
+
+The data behind this table is available as [CSV file](aggrSparqlScores.csv) as well.
+
+## Dimensions of the Capability Compass
 
 The capability Compass is organized around 5 dimensions, mainly for demonstration purposes of the new LLM-KG-Bench feature to aggregate scores:
 
@@ -14,7 +69,7 @@ The capability Compass is organized around 5 dimensions, mainly for demonstratio
 
 In the plots, the mean value is indicated by the solid black line, and the blue area represents the standard deviation.
 
-### open LLMs
+## capability plots for open LLMs
 
 The following table shows an overview of Capability Compass plots for open LLMs.
 Each line contains a LLM model family, the columns sort the LLMs according to their parameter count.
@@ -54,7 +109,7 @@ Each line contains a LLM model family, the columns sort the LLMs according to th
 
 
 
-### open LLMs
+## capability plots for propietary LLMs
 
 The following table shows an overview of Capability Compass plots for propietary LLMs.
 Each line contains a LLM model family
@@ -66,53 +121,6 @@ Each line contains a LLM model family
 | -->       |  Claude 3.5 Haiku                       | Claude 3.5 Sonnet                         |                                             |                                           |           |
 | Google    | ![](model-sparql__Gemini_1.5_Flash.png) | ![](model-sparql__Gemini_1.5_Pro.png)     | ![](model-sparql__Gemini_2.0_Flash_Exp.png) |                                           |           |
 | -->       | Gemini 1.5 Flash                        | Gemini 1.5 Pro                            | Gemini 2.0 Flash Exp                        |                                           |           |
-
-
-### aggregated SPARQL scores
-| modelId               | mean |
-| :-------------------- | :--- |
-| Claude 3\.5 Haiku     | 0,94 |
-| Claude 3\.5 Sonnet    | 0,94 |
-| Qwen-2\.5-Coder-32B   | 0,93 |
-| GPT4o 2024/11         | 0,91 |
-| GPTo1-pre 2024/09     | 0,91 |
-| Qwen-2\.5-72B         | 0,91 |
-| Gemini 1\.5 Pro       | 0,9  |
-| Deepseek-R1           | 0,9  |
-| Gemini 1\.5 Flash     | 0,9  |
-| Qwen-3-235B           | 0,89 |
-| GPTo1-mini 2024/09    | 0,89 |
-| Llama-3\.1-70B        | 0,89 |
-| Llama-4-Maverick      | 0,87 |
-| Deepseek-Chat-v3      | 0,87 |
-| GPT4o-mini 2024/07    | 0,87 |
-| Llama-3\.0-70B        | 0,86 |
-| Llama-3\.3-70B        | 0,85 |
-| Qwen-2\.0-72B         | 0,85 |
-| Gemini 2\.0 Flash Exp | 0,85 |
-| Qwen-2\.5-14B         | 0,81 |
-| Qwen-2\.5-32B         | 0,81 |
-| GPT3\.5 2024/01       | 0,8  |
-| Phi-3\.5-MoE          | 0,74 |
-| Qwen-2\.5-7B          | 0,73 |
-| Deepseek-Coder-33B    | 0,73 |
-| Qwen-2-57B-A14B       | 0,7  |
-| Qwen-2\.0-7B          | 0,58 |
-| Qwen-2\.5-3B          | 0,57 |
-| OpenCoder-8B          | 0,55 |
-| Phi-3\.0-medium-128k  | 0,5  |
-| Phi-3\.5-mini         | 0,49 |
-| Llama-3\.1-8B         | 0,42 |
-| Llama-3\.0-8B         | 0,41 |
-| Phi-3\.0-mini-128k    | 0,39 |
-| Phi-3\.0-small-128k   | 0,39 |
-| Qwen-2\.5-1.5B        | 0,32 |
-| Llama-3\.2-3B         | 0,23 |
-| Qwen-2\.0-1.5B        | 0,2  |
-| Qwen-2\.5-0.5B        | 0,11 |
-| Llama-3\.2-1B         | 0,03 |
-| Qwen-2\.0-0.5B        | 0,01 |
-This table is available as [CSV file](aggrSparqlScores.csv) as well
 
 ## Task Plots
 
